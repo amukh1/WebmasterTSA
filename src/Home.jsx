@@ -12,7 +12,6 @@ export function Home(props) {
         <title>Name</title>
         <Nav/>
 
-        <div>eee</div>
-        frog
+        
     </div>
 }
