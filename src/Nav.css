@@ -39,3 +39,12 @@ button {
   font-family: 'Oswald', sans-serif;
   background-color: #A9C3A5;
 }
+
+img {
+  height: 100%;
+}
+
+.img {
+  /* background-color: red; */
+  width: 20%;
+}

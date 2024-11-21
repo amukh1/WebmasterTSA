@@ -8,9 +8,12 @@ import { useEffect, useState, useRef, button } from "react";
 
 export function Nav(props) {
     return <div>
-        <div className="bar"> 
+        <div className="bar">
             <div className="bar1">
-                <div>LOGO</div>
+                <div className="img">
+                    <img src="https://raw.githubusercontent.com/amukh1/WebmasterTSA/refs/heads/main/src/VV.png?token=GHSAT0AAAAAAC2QEKNEJB7SVJFKO66Y5FNQZZ6SAEA" alt="" />
+                
+                </div>
                 <p>Menu</p>
                 <p>About Us</p>
             </div>
