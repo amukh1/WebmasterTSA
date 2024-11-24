@@ -8,6 +8,7 @@ import Autoplay from 'embla-carousel-autoplay'
 
 import { Nav } from './Navbar'
 import { Card } from './components/Card'
+import { Cardtestimonial } from './components/tCard'
 import EmblaCarousel from './components/EmblaCarousel';
 
 import '@fontsource/roboto/300.css';
@@ -58,6 +59,7 @@ export function Home(props) {
         </div>
 
         <div className="section testimonials">
+            <Cardtestimonial/>
             "Wow! Easily the best vegan food I have ever had!" - Larry <br></br>
             "I had some high hopes for this place, and it exceeded my expectations!"- James LeBron <br></br>
             "I gotta say that that was some of the best food I have ever had, and I'm going to be a frequent visitor." - LeBron James <br></br>
