@@ -12,9 +12,11 @@ import { animated, useSpring } from '@react-spring/web'
 export function Cardtestimonial(props) {   // props: name, comment
     return <div className="testi">
         <div className="t1">
-            <div className="pfp"></div>
-            <div className="name">Gordon Ramsay</div>
+            {/* <div className="pfp"></div> */}
+            <img src={props.pfp} alt="" className="pfp" />
+            <div className="name">{props.name}</div>
         </div>
-        <div className="t2">Honestly, I thought it was going to be absolutely dreadful, but it turned out to be quite a pleasant surprise.</div>
+        <div className="stars">5/5 stars</div>
+        <div className="t2">"{props.comment}"</div>
     </div>
 }
