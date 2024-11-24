@@ -7,9 +7,9 @@ import {
 } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 
-import food1 from './Vegan_food.jpg'
-import food2 from './vdp.webp'
-import food3 from './img73872.whqc_2852x1426q80.webp'
+import food1 from '/Vegan_food.jpg'
+import food2 from '/vdp.webp'
+import food3 from '/img73872.whqc_2852x1426q80.webp'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
