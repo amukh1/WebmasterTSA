@@ -7,9 +7,9 @@ import {
 } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
 
-import food1 from 'https://ibb.co/Y7JRRQZ'
-import food2 from 'https://ibb.co/YWTYR5H'
-import food3 from 'https://ibb.co/HBjYK5z'
+// import food1 from '/Vegan_food.jpg'
+// import food2 from 'https://i.postimg.cc/QdsCCsm8/vdp.webp'
+// import food3 from '/img73872.whqc_2852x1426q80.webp'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
@@ -25,7 +25,7 @@ const EmblaCarousel = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
 
-  let imgs = [food1, food2, food3];
+  let imgs = ['https://i.ibb.co/5WCMM4F/Vegan-food.jpg', 'https://i.ibb.co/ky6kHLN/vdp.webp', 'https://i.ibb.co/rFVMQD6/img73872-whqc-2852x1426q80.webp'];
   // let imgs = ['frog', 'frog 2', 'frog 3'];
   return (
     <section className="embla">
