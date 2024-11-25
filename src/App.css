@@ -251,8 +251,14 @@ h1, h2 {
   color: #444;
 }
 
+.menutitlee {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
 .menu-section {
   margin-bottom: 40px;
+  font-size: 2.5rem;
 }
 
 .menu-items {
@@ -277,6 +283,7 @@ h1, h2 {
   height:min-content;
   /* width: min-content; */
   width: 20%;
+  margin-top:20px;
 }
 
 .ti0 {
@@ -309,4 +316,74 @@ h1, h2 {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.process-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process-text {
+  flex: 1;
+  padding-right: 20px; /* Add spacing between text and image */
+}
+
+.process-image {
+  max-width: 40%; /* Adjust size of the image */
+}
+
+.process-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image is properly contained */
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.process-section {
+  margin-bottom: 30px;
+}
+
+.process-content1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.process-text1 {
+  flex: 1;
+  padding-left: 30px; /* Add spacing between text and image */
+  font-size: 1.25rem;
+}
+
+.process-image1 {
+  max-width: 40%; /* Adjust size of the image */
+}
+
+.process-image1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image is properly contained */
+}
+
+.section-title1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.process-section1 {
+  margin-bottom: 30px;
+}
+
+.mission {
+  font-size: 3rem;
+  text-align: center;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }

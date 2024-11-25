@@ -89,25 +89,30 @@ Earthy ceremonial-grade matcha meets zesty fresh lemonade for a vibrant, energiz
 ## Coconut Espresso Shake
 A creamy mix of espresso, coconut milk, and a touch of vanilla, blended with ice for a frothy, satisfying treat. It’s a rich, dairy-free spin on a classic coffee shake, perfect for dessert or a mid-day indulgence. The bold coffee flavor pairs beautifully with the tropical hint of coconut.
 
-# Additional Info
+# Our Process
 
-# Farm-to-table Process
+## Farm-to-table Process
 The farm-to-table process begins with sourcing fresh, seasonal produce directly from local farms, ensuring ingredients are at peak quality. Farmers grow crops and raise livestock using sustainable, eco-friendly practices, minimizing the environmental impact. Once harvested, the produce is transported quickly, often within a day, to maintain freshness and reduce the carbon footprint. Local suppliers deliver directly to restaurants or markets, cutting out intermediaries and ensuring transparency in sourcing.
 
 At the restaurant, chefs craft dishes around what’s available, emphasizing seasonal flavors and reducing food waste. The short supply chain means fewer preservatives are needed, resulting in healthier, more natural meals. Diners enjoy food that reflects the local region, supporting small farmers and boosting the local economy. Any food scraps or leftovers are often composted or repurposed, completing the sustainability loop.
 
 The entire process fosters a strong connection between consumers, chefs, and farmers, creating a community centered on quality and care. Ultimately, the farm-to-table approach prioritizes freshness, sustainability, and a direct relationship with the food we eat.
 
-# Preparation Processes
+## Preparation Processes
 The preparation process for farm-to-table dishes begins with sourcing and handling the freshest ingredients. Produce is hand-picked from local farms or suppliers to ensure peak ripeness and quality, then carefully washed and sorted to remove impurities. Vegetables are peeled, chopped, or prepped as needed, while plant-based proteins like tofu or legumes are marinated or seasoned. Essential components such as stocks, sauces, and dressings are made in-house using whole ingredients to guarantee bold, natural flavors.
 
 To streamline service, staples like grains, soups, or roasted vegetables are batch-cooked in advance, while mains and appetizers are prepared fresh to order. Chefs meticulously assemble dishes, focusing on consistency and presentation. Each plate is finished with thoughtful garnishes to balance flavor and elevate its visual appeal. Before leaving the kitchen, dishes undergo a quality check to meet high standards of taste and appearance.
 
 Throughout the process, sustainability is a priority. Kitchen scraps are composted or repurposed, and biodegradable or reusable materials are used for storage and service. This comprehensive approach ensures that every dish reflects the farm-to-table philosophy of freshness, care, and environmental responsibility.
 
-# Our Mission
+## Sustainability
+
+10 sentences or so on sustainability
+
+# About Us
+
+## Our Mission
 At Vegan Villa, our mission is to create delicious, plant-based meals that celebrate freshness, sustainability, and community. We are committed to supporting local farmers and using eco-friendly practices to deliver wholesome food that nourishes both people and the planet. By fostering a welcoming space, we aim to inspire a deeper connection to the food we eat and the impact it has on the world around us.
 
 More sliding pictures
 
-# About Us

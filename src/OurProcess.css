@@ -1,0 +1,82 @@
+.our-process-container {
+    padding: 20px;
+    /* max-width: 800px; */
+    margin: auto;
+    /* font-family: 'Arial, sans-serif'; */
+    color: #2E2E2E;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Match your vegan theme */
+  }
+  
+  .process-section {
+    margin-bottom: 30px;
+    padding:25px;
+  }
+  
+  .process-section h2 {
+    font-size: 3.5rem;
+    color: #388E3C; /* Slightly darker green */
+    margin-bottom: 10px;
+  }
+  
+  .process-section p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  .plshelpme {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    /* align-items: center; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .fm {
+    position:relative;
+    top:25px;
+  }
+
+  .pie {
+    width:20%;
+  }
+
+  /* .first {
+    background-color: hsl(0, 0%, 83%);
+    padding: 25px;
+    width:80%;
+    display:flex;
+    flex-direction: row;
+  }
+
+  .second {
+    background-color: hsl(0, 0%, 83%);
+    padding: 25px;
+    width:80%;
+    display:flex;
+    flex-direction: row;
+    align-self: right;
+  }
+
+  .firstp {
+    width:50%;
+    padding-right:25px;
+    border-right: solid 2px black;
+    text-align: center;
+  }
+
+  .imgftt {
+    width:50%;
+    padding-left: 25px;
+  } */

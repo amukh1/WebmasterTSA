@@ -17,13 +17,22 @@ export function Nav(props) {
     function toHome() {
         navigate("/");
     }
+
+    function toProcess() {
+        navigate("/additional");
+    }
+
+    function toAbt() {
+        navigate("/aboutus");
+    }
+
     return <div>
         <div className="bar">
                 <div className="logo"  type="button" onClick={toHome}>Vegan Villa</div>
                 <div className="page" type="button" onClick={toMenu}>Menu</div>
-                <div className="page">Additional Info</div>
+                <div className="page" type="button" onClick={toProcess}>Our Process</div>
                 {/* <img src="https://raw.githubusercontent.com/amukh1/WebmasterTSA/refs/heads/main/src/VV.png?token=GHSAT0AAAAAAC2QEKNESXLOP5JUMKDU4U6SZ2CCPWA" alt="" /> */}
-                <div className="page">About Us</div>
+                <div className="page" type="button" onClick={toAbt}>About Us</div>
         </div>
     </div>
 }

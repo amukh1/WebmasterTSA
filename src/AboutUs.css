@@ -1,0 +1,106 @@
+.about-me-container {
+    padding: 20px;
+    /* max-width: 1000px; */
+    margin: auto;
+    /* font-family: 'Arial, sans-serif'; */
+    color: #2E2E2E;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .about-me-section-title {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Vegan-friendly green */
+  }
+  
+  .about-me-mission-section h2 {
+    font-size: 1.5rem;
+    color: #388E3C;
+    margin-bottom: 10px;
+  }
+  
+  .about-me-mission-section p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  /* Sliding Pictures Section */
+  .about-me-sliding-pictures-section {
+    margin-bottom: 30px;
+  }
+  
+  .about-me-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-me-slide {
+    min-width: 300px;
+    height: 200px;
+    background-color: #D8E6D5;
+    border: 2px solid #A5CDA8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    color: #2E2E2E;
+    font-weight: bold;
+    flex: 0 0 30%;
+  }
+  
+  /* Cards Section */
+  .about-me-cards-section {
+    margin-top: 30px;
+  }
+  
+  .about-me-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .about-me-card {
+    flex: 1 1 calc(30% - 20px); /* Flexible cards that adjust for responsiveness */
+    background-color: #ffffff;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .about-me-card-image {
+    height: 150px;
+    background-color: #D8E6D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2E2E2E;
+  }
+  
+  .about-me-card-content {
+    padding: 15px;
+  }
+  
+  .about-me-card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  .about-me-card-content p {
+    font-size: 0.9rem;
+    color: #666666;
+  }
+  

@@ -11,6 +11,8 @@ import { useEffect, useState, useRef } from "react";
 
 import { Home } from './Home'
 import { Menu } from './Menu'
+import { Additional } from './Additional'
+import { AboutUs } from './AboutUs'
 import { Nav } from './Navbar'
 
 export default function App() {
@@ -22,6 +24,8 @@ export default function App() {
         <Routes>
           <Route path="/menu" element={<Menu/>} />
           <Route path="/" element={<Home/>} />
+          <Route path="/additional" element={<Additional/>} />
+          <Route path="/aboutus" element={<AboutUs/>} />
         </Routes>
       </Router>
       </nav>
