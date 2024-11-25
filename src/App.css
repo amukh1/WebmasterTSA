@@ -233,6 +233,13 @@ nav {
 .map {
   border: solid 10px black;
   margin-top:10px;
+  width:75%;
+  border-radius: 25px;
+}
+
+iframe {
+  width:100%;
+  border-radius: 25px;
 }
 
 .slidefood {
@@ -386,4 +393,34 @@ h1, h2 {
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+.mission-disc {
+  font-size: 1.5rem;
+}
+
+.more {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about-me-slide {
+  position:relative;
+  bottom:0;
+  transition: 0.5s ease;
+}
+
+.about-me-slide:hover {
+  bottom: 10px;
+}
+
+.about-me-card {
+  position: relative;
+  bottom: 0;
+  transition: 0.5s ease;
+}
+
+.about-me-card:hover {
+  bottom: 10px;
 }

@@ -56,7 +56,7 @@ export function Menu(props) {
             { name: "Apple Cinnamon Crumble", description: "Warm, cinnamon-spiced apples are baked with a crunchy oat topping for a comforting dessert. Served with a side of smooth vegan vanilla custard, it’s the perfect balance of warm and creamy. This dessert is like a hug in a bowl, perfect for any time of year.",
                 picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUw-e0rYxCuER-SvPyJqrM9yaW21_rHySlcDeI1h3cOUv33deZ"
             },
-            { name: "Peanut Butter Brownies", description: "A creamy mix of espresso, coconut milk, and a touch of vanilla, blended with ice for a frothy, satisfying treat. It’s a rich, dairy-free spin on a classic coffee shake, perfect for dessert or a mid-day indulgence. The bold coffee flavor pairs beautifully with the tropical hint of coconut.",
+            { name: "Peanut Butter Brownies", description: "Fudgy, rich brownies are swirled with creamy peanut butter and topped with a sprinkle of sea salt for the perfect salty-sweet bite. Each bite is dense, indulgent, and packed with flavor. These brownies are a favorite for anyone craving a chocolatey dessert with a bit of extra depth.",
                 picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2UoOfjtM98mfUHYpFRjgaVfaDgkPoUcxyeraV1N3H4PIGXKB"
             }
         ],

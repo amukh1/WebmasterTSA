@@ -89,6 +89,7 @@ Earthy ceremonial-grade matcha meets zesty fresh lemonade for a vibrant, energiz
 ## Coconut Espresso Shake
 A creamy mix of espresso, coconut milk, and a touch of vanilla, blended with ice for a frothy, satisfying treat. It’s a rich, dairy-free spin on a classic coffee shake, perfect for dessert or a mid-day indulgence. The bold coffee flavor pairs beautifully with the tropical hint of coconut.
 
+
 # Our Process
 
 ## Farm-to-table Process
@@ -107,12 +108,20 @@ Throughout the process, sustainability is a priority. Kitchen scraps are compost
 
 ## Sustainability
 
-10 sentences or so on sustainability
+Sustainability is a core principle of Vegan Villa. From sourcing ingredients to serving dishes, we prioritize eco-friendly practices. Local sourcing reduces transportation emissions, while seasonal ingredients minimize the energy footprint of farming. In the kitchen, chefs utilize every part of an ingredient, ensuring minimal food waste. Additionally, scraps are composted.
 
-# About Us
+The restaurant emphasizes reusable or biodegradable materials for packaging and storage, eliminating single-use plastics. Energy-efficient appliances and waste recycling further reduce the environmental impact. Guests are encouraged to embrace sustainability by offering incentives for bringing their own containers or participating in community composting programs.
+
 
 ## Our Mission
 At Vegan Villa, our mission is to create delicious, plant-based meals that celebrate freshness, sustainability, and community. We are committed to supporting local farmers and using eco-friendly practices to deliver wholesome food that nourishes both people and the planet. By fostering a welcoming space, we aim to inspire a deeper connection to the food we eat and the impact it has on the world around us.
 
-More sliding pictures
+## Our Team
+
+5 cards with our names on them (done)
+
+## Contact and Newsletter
+Contact: aditya_m2008@icloud.com (or create a fake email just for this)
+Phone Number: 1-800-555-0199
+Join Our Newletter: (Enter email)
 
