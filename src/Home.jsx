@@ -8,6 +8,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import { useNavigate } from "react-router-dom";
 
 import { Nav } from './Navbar'
+import { Footer } from './components/footer'
 import { Card } from './components/Card'
 import { Cardtestimonial } from './components/tCard'
 import EmblaCarousel from './components/EmblaCarousel';
@@ -63,8 +64,8 @@ export function Home(props) {
         </div>
 
         <div className="section testimonials">
-            <Cardtestimonial name="Gordon Ramsay" comment="Honestly, I thought it was going to be absolutely dreadful, but it turned out to be quite a pleasant surprise." pfp="https://pbs.twimg.com/profile_images/1448696882746695683/Jp2_LEBL_400x400.jpg" delay={1}/>
-            <Cardtestimonial name="Larry" comment="Wow! Easily the best vegan food I have ever had!" pfp="https://cdn.discordapp.com/attachments/1004909701756096513/1310059035487371347/image.png?ex=6743d70d&is=6742858d&hm=a7fc1d802f7b372dbabf3b8550ce3fee5108a891920535938f4216f3c6203ee7&" delay={2}/>
+            <Cardtestimonial name="Gordon Ramsay" comment="Honestly, I thought it was going to be absolutely dreadful, but it turned out to be quite a pleasant surprise." pfp="https://i.ibb.co/BZXmPWP/Jp2-LEBL-400x400.jpg" delay={1}/>
+            <Cardtestimonial name="Larry" comment="Wow! Easily the best vegan food I have ever had!" pfp="https://i.ibb.co/VB1F6m9/image.png" delay={2}/>
             <Cardtestimonial name="LeBron James" comment="I gotta say that that was some of the best food I have ever had, and I'm going to be a frequent visitor." pfp="https://hoopshype.com/wp-content/uploads/sites/92/2023/05/i_5a_c1_cf_lebron-james.png?w=1000&h=600&crop=1" delay={3}/>
             
         </div>
@@ -72,5 +73,7 @@ export function Home(props) {
         {/* eee */}
         {/* <img src="http://www.msn.com/en-us/foodanddrink/recipes/chicken-with-crushed-harissa-chickpeas/ar-BB1j9wiP?apiversion=v2&noservercache=1&domshim=1&renderwebcomponents=1&wcseo=1&batchservertelemetry=1&noservertelemetry=1" alt=""/> */}
         {/* <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgfjx-_exPt9OeXtAIkN6w4kWH7L7gzlOA7xGASCeoNtrtgaLQ" alt=""/> */}
+    
+        <Footer/>
     </div>
 }

@@ -4,10 +4,12 @@ import { ArcherContainer, ArcherElement } from "react-archer"
 import './OurProcess.css'; // Import the CSS file for styling
 
 import { Nav } from './Navbar';
+import { Footer } from './components/footer'
 
 export function Additional(props) {
     return (
         <div>
+            <title>Our Process | Vegan Villa</title>
             <Nav />
             <div className="our-process-container">
                 <h1 className="section-title">Our Process</h1>
@@ -66,6 +68,7 @@ export function Additional(props) {
                     </div>
                 </section>
             </div>
+            <Footer />
         </div>
     );
 }

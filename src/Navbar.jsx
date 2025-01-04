@@ -19,11 +19,15 @@ export function Nav(props) {
     }
 
     function toProcess() {
-        navigate("/additional");
+        navigate("/process");
     }
 
     function toAbt() {
         navigate("/aboutus");
+    }
+
+    function toRef() {
+        navigate("/reference");
     }
 
     return <div>
@@ -33,6 +37,7 @@ export function Nav(props) {
                 <div className="page" type="button" onClick={toProcess}>Our Process</div>
                 {/* <img src="https://raw.githubusercontent.com/amukh1/WebmasterTSA/refs/heads/main/src/VV.png?token=GHSAT0AAAAAAC2QEKNESXLOP5JUMKDU4U6SZ2CCPWA" alt="" /> */}
                 <div className="page" type="button" onClick={toAbt}>About Us</div>
+                <div className="page" type="button" onClick={toRef}>Reference Page</div>
         </div>
     </div>
 }
