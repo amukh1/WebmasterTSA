@@ -20,19 +20,32 @@ import '@fontsource/roboto/700.css';
 
 export function Home(props) {
 
-    const springs = useSpring({
-        from: { x: 0 },
-        to: { x: 100 },
-    })
+    const [spring, setSpring] = useSpring(() => ({
+        opacity: 1,
+        from: { opacity: 0 },
+    }));
 
-    
-    
 
+    const phrases = ['Cage Free & All Natural', 'Unconventually fucking lobotomy inducing', 'Unconventtually Autistic']
+    // let phrase = phrases[Math.floor(Math.random()*phrases.length)]
+    let [phrase, setPhrase] = useState(phrases[Math.floor(Math.random()*phrases.length)])
+    let [phraseDiv, setPhraseDiv] = useState(<animated.div className="line" style={spring}>- {phrases[Math.floor(Math.random()*phrases.length)]} -</animated.div>)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setPhrase(phrases[Math.floor(Math.random()*phrases.length)]);
+
+        }, 3000);
+        // const interval = setInterval(() => setPhraseDiv(<animated.div className="line" style={spring}>- {phrases[Math.floor(Math.random()*phrases.length)]} -</animated.div>), 3000);
+        return () => {
+          clearInterval(interval);
+        };
+      }, [setPhrase]);
     return <div>
         <title>Home | Vegan Villa</title>
         <Nav/>
         <div className="section land">
-            <Card/>
+            <animated.div className="line" style={spring}>- {phrase} -</animated.div>
+            {/* {phraseDiv} */}
         </div>
         <div className="section slidefood">
             <EmblaCarousel slides={[1, 2, 3]} options={{ loop: true }}/>

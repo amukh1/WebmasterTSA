@@ -4,6 +4,7 @@ import { ArcherContainer, ArcherElement } from "react-archer"
 import './AboutUs.css'; // New CSS file for this page
 
 import { Nav } from './Navbar';
+import { Card } from './components/Card'
 import { Footer } from './components/footer'
 
 export function AboutUs(props) {
@@ -36,7 +37,7 @@ export function AboutUs(props) {
         <Nav />
         <div className="about-me-container">
           <h1 className="about-me-section-title">About Us</h1>
-    
+          <Card/>
           {/* Mission Section */}
           <section className="about-me-mission-section">
             <p class="mission">Our Mission</p>
@@ -76,7 +77,7 @@ export function AboutUs(props) {
               <input name="Email" onChange={onType} placeholder="Email"/>
               <input name="Mesage" onChange={onType2} placeholder="Message"/>
               <button className="join" type="button" onClick={join}>Join!</button>
-              <p className="ps">P.S. Mr. Hausman we will see the message and respond</p>
+              <div className="PS">P.S. We can actually see your message, and we will respond!</div>
             </div>
           </section>
     

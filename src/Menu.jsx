@@ -7,99 +7,165 @@ import { Footer } from './components/footer'
 export function Menu(props) {
     const [hoveredItem, setHoveredItem] = useState(null);
 
+    /*
     const menuData = {
         Appetizers: [
-            { name: "Buffalo Cauliflower Wings", description: "Crispy, golden cauliflower bites tossed in a spicy buffalo sauce, delivering the perfect balance of heat and flavor. Served alongside a creamy, cooling vegan ranch, these wings are a perfect way to start any meal." ,
-                picture:"https://i.ibb.co/K5Vkmf7/buffy.jpg"},
-            { name: "Spinach & Artichoke Dip", description: "This creamy, dairy-free spinach and artichoke dip is rich and velvety, made with cashews and nutritional yeast for that cheesy flavor. Served warm with crispy toasted baguette slices, it's perfect for dipping and sharing.",
-                picture:"https://i.ibb.co/cbFr8Y9/images.jpg"
+            { name: "Spicy Vegan Sausage Rolls", description: "Try our Spicy Vegan Sausage Rolls, made with a flavorful plant-based sausage filling and wrapped in flaky puff pastry. The filling is spiced with smoky paprika and chili, giving it a nice kick. A simple and satisfying snack or meal option." ,
+                picture:"https://media-cdn2.greatbritishchefs.com/media/5kbpxf0s/img32930.whqc_1536x1024q80.webp"},
+            { name: "Vegan Baked Beans", description: "Enjoy our Vegan Baked Beans, slow-cooked in a rich tomato sauce with a hint of smokiness and spice. The tender beans are packed with flavor, making it a hearty and satisfying dish. Perfect on toast or as a side.",
+                picture:"https://media-cdn2.greatbritishchefs.com/media/cr4fqdm1/img38195.whqc_1536x1024q80.webp"
             },
-            { name: "Zucchini Fritters", description: "Crispy on the outside and tender inside, these zucchini fritters are seasoned with herbs and served with a refreshing lemon-dill yogurt dip.",
-                picture:"https://www.twopeasandtheirpod.com/wp-content/uploads/2022/08/Zucchini-Fritters-4.jpg"
+            { name: "Chestnut-filled Cabbage Leaves", description: "Try our Chestnut-Filled Cabbage Leaves, with tender cabbage wrapped around a savory chestnut filling. Baked until perfectly tender and served with a light tomato sauce, this dish is hearty and flavorful. A simple, wholesome option for any occasion.",
+                picture:"https://media-cdn2.greatbritishchefs.com/media/vx0f1gy5/img80065.whqc_1536x1024q80.webp"
             },
-            { name: "Stuffed Mushrooms", description: "These tender mushrooms are filled with a herbed cashew cream, then baked to golden perfection. The rich filling combines cashews, garlic, and fresh herbs for a savory bite.",
-                picture:"https://i.ibb.co/235JfZM/images.jpg"
-            }
+            { name: "Momos", description: "Enjoy our Momos, steamed dumplings filled with a savory mix of vegetables and spices. Served with a tangy dipping sauce, they’re a simple and satisfying snack or meal.",
+                picture:"https://media-cdn2.greatbritishchefs.com/media/izfhqkhf/romy_recipe-3770-copy.whqc_1536x1024q80.webp"
+            },
+            { name: "Scrambled Tofu", description: "Try our Scrambled Tofu, a light and flavorful dish seasoned with turmeric and spices. It’s a perfect plant-based alternative to scrambled eggs, great on its own or with toast.",
+              picture:"https://media-cdn2.greatbritishchefs.com/media/qbzjoev4/img31723.whqc_1536x1024q80.webp"}
         ],
         Mains: [
-            { name: "Eggplant Parmesan Stack", description: "This plant-based take on the classic dish layers crispy, breaded eggplant slices with marinara sauce, cashew mozzarella, and fresh basil. It’s baked until bubbly and golden, offering a comforting, hearty dish. Paired with a simple side salad, it's a meal that feels indulgent yet wholesome.",
-                picture:"https://i.ibb.co/QM69tKn/i.jpg"},
-            { name: "Chickpea & Spinach Curry", description: "A vibrant, creamy coconut-based curry filled with tender chickpeas and fresh spinach, this dish is fragrant with aromatic spices. Served with fluffy jasmine rice, it’s a satisfying and flavorful meal that hits all the right notes. It's the perfect comfort food for those craving rich flavors with a lighter twist.",
-                picture: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrZs2hO0Y82BOv5EF-_ZRksLaD7Lp1RAgFi6I0SiFKNAvYIgz-"},
-            { name: "Tempeh Teriyaki Bowl", description: "Marinated tempeh is stir-fried with a colorful array of vegetables, creating a dish that’s both savory and slightly sweet. Topped with sesame seeds and served over brown rice, this bowl is a filling, protein-packed meal. It’s the perfect balance of flavors and textures, making it a crowd-pleaser for all.",
-                picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnBVEdlN4hZxFx6Qb0Qn3BEoIOzJQPaT6T8avjXK8OjUKcr9Av"},
-            { name: "Loaded Veggie Burger", description: "A house-made lentil patty is stacked high with fresh lettuce, tomato, caramelized onions, and chipotle mayo, all nestled in a soft brioche bun. The patty is hearty and flavorful, satisfying even the most avid burger lovers. With its bold toppings and juicy patty, this burger is a classic favorite made plant-based.",
-                picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-ctN1vr4dXzshsu4AlqxEawkiDmtWN_Y8-SjnScspw-J3yOJe"},
-            { name: "Vegan Lasagna", description: "This layered masterpiece features pasta, tofu ricotta, roasted veggies, and a rich marinara sauce, all baked to perfection. It’s comforting and hearty, with a perfect balance of flavors in every bite. Whether you’re vegan or not, this lasagna offers all the savory satisfaction of the traditional dish.",
-                picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBNnJ0kq6e6ldRY08PNbiHHyHrh9BG_sRCbkPyMaIxjZ5wW39Y"}
+
+            { name: "Mushroom and Quinoa Vegan Burger", description: "Enjoy our Mushroom and Quinoa Vegan Burger, made with a savory patty of mushrooms and quinoa. Served in a soft bun with fresh toppings, it’s hearty and delicious. A simple and satisfying plant-based choice.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/22sfe0ld/img54263.whqc_1536x1024q80.webp"},
+            { name: "Barbecued Celeriac Burger", description: "Try our Barbecued Celeriac Burger, featuring smoky, grilled celeriac in a soft bun. Topped with fresh slaw and a touch of barbecue sauce, it’s simple and satisfying. A unique plant-based option that’s full of flavor.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/bw1klhsb/img82261.whqc_1536x1024q80.webp"},
+            { name: "Quorn Rendang Curry", description: "Enjoy our Quorn Rendang Curry, a flavorful dish with Quorn pieces simmered in a rich, spiced coconut sauce. It’s hearty, warming, and pairs perfectly with rice. A simple take on a classic, full of bold flavors.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/ai0bsxio/img41438.whqc_1536x1024q80.webp"},
+            { name: "Quorn and Sweet Potato Curry", description: "Try our Quorn and Sweet Potato Curry, a comforting dish with tender Quorn pieces and sweet potato in a lightly spiced sauce. It’s warm and perfect with rice or bread. A simple and satisfying plant-based meal.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/v5ofa4yp/img37764.whqc_768x512q80.webp"},
+            { name: "Mujadara", description: "Enjoy our Mujadara, a simple dish of lentils and rice topped with crispy caramelized onions. It’s hearty, flavorful, and made with just a few basic ingredients. A timeless and satisfying meal for any time of day.",
+                picture:"https://media-cdn2.greatbritishchefs.com/media/gueitkae/mujadara.whqc_1536x1024q80.webp"}
         ],
         Salads: [
-            { name: "Mediterranean Quinoa Salad", description: "This salad combines protein-rich quinoa with fresh cherry tomatoes, cucumbers, Kalamata olives, and a lemon-tahini dressing. It’s light, refreshing, and packed with Mediterranean flavors that make it the perfect side or light main dish. The tangy dressing brings everything together, offering a burst of brightness in every bite.",
-                picture: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrnxDUFmD1dH-GqFUOAumEii2fziscxrgpP5Jd6KK1U6NWkWTf"
+            { name: "Spiced Roasted Cauliflower and Orange Salad", description: "Try our Spiced Roasted Cauliflower and Orange Salad, featuring roasted cauliflower with a touch of spice and sweet orange segments. The simple combination of flavors is light, refreshing, and satisfying. A perfect side or light meal option.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/tmahtlor/img81346.whqc_1536x1024q80.webp"
             },
-            { name: "Roasted Veggie Salad", description: "A medley of seasonal vegetables is roasted until tender and caramelized, then served over a bed of mixed greens. Topped with pumpkin seeds and drizzled with balsamic vinaigrette, this salad is earthy and satisfying. It’s the perfect mix of warm and cool elements, making it ideal for any season.",
-                picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVPLkczG_sPRjo9g-1oUXhMQISoM22DOiwVdONge4Wy3KgT6xr"
+            { name: "Beetroot Salad", description: "Try our Beetroot Salad, a simple yet flavorful mix of roasted beetroot, fresh greens, and a tangy dressing. The earthy sweetness of the beets is perfectly complemented by the crispness of the salad. Light, refreshing, and full of natural goodness.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/oujh3oi3/img78057.whqc_1536x1024q80.webp"
             },
-            { name: "Avocado & Citrus Salad", description: "This vibrant salad features creamy avocado paired with juicy orange slices and crisp red onion, all tossed with fresh arugula. A zesty lime vinaigrette ties the ingredients together, making it a refreshing and light dish. It’s a perfect balance of creamy, tangy, and slightly sweet.",
-                picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJQGPU3eKvhx2YyzMXkMIAzn70lJWybbHa51BAHwDJR7V3DbB"
+            { name: "Autumn Vegetable Salad", description: "Enjoy our Autumn Vegetable Salad, featuring roasted seasonal vegetables like squash, carrots, and parsnips, tossed with fresh greens. Drizzled with a maple-balsamic dressing, it’s a perfect balance of sweet, savory, and earthy flavors. A warming and nutritious dish, ideal for the cooler months.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/sipbwszl/img78113.whqc_1536x1024q80.webp"
             }
         ],
         Desserts: [
-            { name: "Vegan Cheesecake", description: "Made with a creamy cashew-based filling, this vegan cheesecake is rich and smooth with a light, refreshing tang. The graham cracker crust adds a satisfying crunch, while seasonal fruit toppings provide a burst of color and natural sweetness. It’s a decadent yet wholesome way to end your meal.",
-                picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7pGzRM70DK1T_kG_SO_KMQs9iyVczurpL0OH0l_nyX1WUs5mv"
+            { name: "Gluten-Free Banana Bread", description: "Savor our Gluten-Free Banana Bread, made with ripe bananas and almond flour for a moist, naturally sweet treat. It’s soft, light, and free from gluten, making it the perfect snack or breakfast option. Simple, wholesome, and utterly delicious.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/sgdnmh0n/img54238.whqc_1536x1024q80.webp"
             },
-            { name: "Chocolate Lava Cake", description: "This warm, gooey-centered chocolate cake is rich and indulgent, with the perfect melt-in-your-mouth experience. Served with a scoop of coconut ice cream, it’s a true treat for chocolate lovers. The molten center adds a touch of drama, making it a perfect dessert for any special occasion.",
-                picture: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTliRL2fB4gcM2YWhKY2ktL5YePm_BOchdhy2ccu12_oFywc_YX"
+            { name: "Frosted Raw Vegan Brownies", description: "Enjoy our Frosted Raw Vegan Brownies, made with 75% cacao, dates, and walnuts for a naturally sweet and fudgy base. Topped with a smooth raw chocolate frosting, these brownies are a delicious and guilt-free treat. Perfect for a sweet craving that’s both indulgent and wholesome.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/1xsnqmkp/img71014.whqc_1536x1024q80.webp"
             },
-            { name: "Banana Nice Cream Sundae", description: "Layers of creamy banana-based soft serve are topped with a drizzle of chocolate sauce, crunchy granola, and fresh berries. It’s a healthier twist on the classic sundae, but with all the indulgence and fun. Naturally sweetened and dairy-free, it’s a guilt-free way to satisfy your sweet tooth.",
-                picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThxYJRCtNmUnjRD3iwmpnxpVyBQBSYhDS31MkX9JRWd6EdOGrm"
+            { name: "Vegan Chestnut and Orange Cheesecake", description: "Try our Vegan Chestnut and Orange Cheesecake, a creamy dessert with a blend of chestnut and orange flavors. The smooth filling sits on a nutty base, offering a satisfying and refreshing taste. A delicious, plant-based treat for any occasion.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/zltnekci/cheesecake-recipe.whqc_1536x1024q80.webp"
             },
-            { name: "Apple Cinnamon Crumble", description: "Warm, cinnamon-spiced apples are baked with a crunchy oat topping for a comforting dessert. Served with a side of smooth vegan vanilla custard, it’s the perfect balance of warm and creamy. This dessert is like a hug in a bowl, perfect for any time of year.",
-                picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUw-e0rYxCuER-SvPyJqrM9yaW21_rHySlcDeI1h3cOUv33deZ"
+            { name: "Vegan Banana and Chocolate Nice Cream", description: "Cool off with our Vegan Banana and Chocolate Nice Cream, a creamy, dairy-free treat made with ripe bananas and rich cocoa. Naturally sweet and refreshing, it’s a simple, plant-based dessert that’s both healthy and delicious. Perfect for a guilt-free treat on a warm day.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/utupgnva/img66564.whqc_1536x1024q80.webp"
             },
-            { name: "Peanut Butter Brownies", description: "Fudgy, rich brownies are swirled with creamy peanut butter and topped with a sprinkle of sea salt for the perfect salty-sweet bite. Each bite is dense, indulgent, and packed with flavor. These brownies are a favorite for anyone craving a chocolatey dessert with a bit of extra depth.",
-                picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2UoOfjtM98mfUHYpFRjgaVfaDgkPoUcxyeraV1N3H4PIGXKB"
+            { name: "Vegan Dark Chocolate Mousse", description: "Enjoy our Vegan Dark Chocolate Mousse, a rich and creamy dessert made with dark chocolate and coconut milk. It’s smooth, decadent, and naturally dairy-free, offering a simple yet satisfying treat. Perfect for chocolate lovers looking for a plant-based indulgence.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/povf20rd/img74937.whqc_1536x1024q80.webp"
             }
         ],
         Drinks: [
-            { name: "Berry Bliss Smoothie", description: "A refreshing blend of sweet strawberries, tart blueberries, creamy banana, and almond milk. Lightly sweetened with maple syrup, this smoothie is a fruity burst of energy that feels like sunshine in a glass. Perfect for breakfast, lunch, or a mid-day treat, it’s packed with antioxidants and natural goodness.",
-                picture: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVKmH6ZsDpHw4PdvgsrnetN4G1iC4_aiB58espOxcepbOGNJy4"
+            { name: "Watermelon, Rosemary, and Prosecco Sorbet Cocktail", description: "Try our Watermelon, Rosemary, and Prosecco Sorbet Cocktail, a light and refreshing drink. With the natural sweetness of watermelon, a hint of rosemary, and a splash of Prosecco, it’s a simple and enjoyable treat. Perfect for a relaxing moment or a casual gathering.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/3ajekhpj/img40353.whqc_1536x1024q80.webp"
             },
-            { name: "Golden Turmeric Latte", description: "This comforting latte combines turmeric, ginger, cinnamon, and steamed oat milk for a warm, spiced drink with a golden glow. Sweetened lightly with agave, it’s a soothing choice that’s as nourishing as it is flavorful. Known for its anti-inflammatory benefits, it’s a hug in a mug that leaves you feeling balanced.",
-                picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6_EO7L0S0RQPaYv1jsBoRAhBY76xBagPAHtsu8p96EDTCwCDh"
+            { name: "Acai Berry Smoothie", description: "Enjoy our Acai Berry Smoothie, a refreshing blend of acai berries, banana, and coconut water. Naturally sweet and packed with antioxidants, it’s the perfect way to start your day or recharge in the afternoon. Simple, delicious, and full of nutrients.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/adejvmsb/img60971.whqc_1536x1024q80fpt502fpl494.webp"
             },
-            { name: "Iced Hibiscus Tea", description: "Brewed from dried hibiscus petals, this tangy, ruby-red tea is served over ice with a sprig of mint and a wedge of lime. Slightly sweet and incredibly refreshing, it’s perfect for cooling off on a warm day. Its natural tartness pairs beautifully with a hint of sweetness, creating a vibrant, invigorating drink.",
-                picture: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-fqmZ5o4el_k2pznz0lCeFoe55cEcH5GseR5uQES4oFr1zLeD"
-            },
-            { name: "Matcha Lemonade", description: "A bold mix of earthy ceremonial-grade matcha and zesty fresh lemonade creates this unique, energizing drink. Served chilled, it offers a harmonious balance of tart citrus and smooth green tea. The natural caffeine boost makes it a refreshing pick-me-up for any time of day.",
-                picture: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdEW0wzHfybtl1H7BKiuSsr7HpfQGSWIwnhvoz2vaJDV2Dmqwd"
-            },
-            { name: "Coconut Espresso Shake", description: "Rich espresso meets creamy coconut milk and a hint of vanilla, blended with ice for a frothy, indulgent treat. The bold coffee flavor is perfectly tempered by the tropical sweetness of coconut, creating a dairy-free shake that’s light yet satisfying. Ideal as a dessert drink or a luxurious energy boost.",
-                picture: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJont6ZPD8qE_ZtOhpEMKd0TUoZw7kr7opzDMfHBX1WJngOLOx"
+            { name: "Mulled Wine Hot Chocolate", description: "Warm up with our Mulled Wine Hot Chocolate, a cozy blend of rich hot chocolate and mulled wine spices. With hints of cinnamon and cloves, it’s a comforting drink perfect for chilly evenings. A simple yet indulgent way to enjoy the best of both worlds.",
+                picture: "https://media-cdn2.greatbritishchefs.com/media/idghe1n3/img85166.whqc_1536x1024q80.webp"
             }
         ]
     };
+    */
+
+    const menuData = {
+      Appetizers: [
+          { name: "Spicy Vegan Sausage Rolls", description: "Try our Spicy Vegan Sausage Rolls, made with a flavorful plant-based sausage filling and wrapped in flaky puff pastry. The filling is spiced with smoky paprika and chili, giving it a nice kick. A simple and satisfying snack or meal option." ,
+              picture:"https://images.unsplash.com/photo-1673960782730-ab13fc062d6d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"},
+          { name: "Vegan Baked Beans", description: "Enjoy our Vegan Baked Beans, slow-cooked in a rich tomato sauce with a hint of smokiness and spice. The tender beans are packed with flavor, making it a hearty and satisfying dish. Perfect on toast or as a side.",
+              picture:"https://media-cdn2.greatbritishchefs.com/media/cr4fqdm1/img38195.whqc_1536x1024q80.webp"
+          },
+          { name: "Chestnut-filled Cabbage Leaves", description: "Try our Chestnut-Filled Cabbage Leaves, with tender cabbage wrapped around a savory chestnut filling. Baked until perfectly tender and served with a light tomato sauce, this dish is hearty and flavorful. A simple, wholesome option for any occasion.",
+              picture:"https://media-cdn2.greatbritishchefs.com/media/vx0f1gy5/img80065.whqc_1536x1024q80.webp"
+          },
+          { name: "Momos", description: "Enjoy our Momos, steamed dumplings filled with a savory mix of vegetables and spices. Served with a tangy dipping sauce, they’re a simple and satisfying snack or meal.",
+              picture:"https://media-cdn2.greatbritishchefs.com/media/izfhqkhf/romy_recipe-3770-copy.whqc_1536x1024q80.webp"
+          },
+          { name: "Scrambled Tofu", description: "Try our Scrambled Tofu, a light and flavorful dish seasoned with turmeric and spices. It’s a perfect plant-based alternative to scrambled eggs, great on its own or with toast.",
+            picture:"https://media-cdn2.greatbritishchefs.com/media/qbzjoev4/img31723.whqc_1536x1024q80.webp"}
+      ],
+      Mains: [
+
+          { name: "Mushroom and Quinoa Vegan Burger", description: "Enjoy our Mushroom and Quinoa Vegan Burger, made with a savory patty of mushrooms and quinoa. Served in a soft bun with fresh toppings, it’s hearty and delicious. A simple and satisfying plant-based choice.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/22sfe0ld/img54263.whqc_1536x1024q80.webp"},
+          { name: "Barbecued Celeriac Burger", description: "Try our Barbecued Celeriac Burger, featuring smoky, grilled celeriac in a soft bun. Topped with fresh slaw and a touch of barbecue sauce, it’s simple and satisfying. A unique plant-based option that’s full of flavor.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/bw1klhsb/img82261.whqc_1536x1024q80.webp"},
+          { name: "Quorn Rendang Curry", description: "Enjoy our Quorn Rendang Curry, a flavorful dish with Quorn pieces simmered in a rich, spiced coconut sauce. It’s hearty, warming, and pairs perfectly with rice. A simple take on a classic, full of bold flavors.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/ai0bsxio/img41438.whqc_1536x1024q80.webp"},
+          { name: "Quorn and Sweet Potato Curry", description: "Try our Quorn and Sweet Potato Curry, a comforting dish with tender Quorn pieces and sweet potato in a lightly spiced sauce. It’s warm and perfect with rice or bread. A simple and satisfying plant-based meal.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/v5ofa4yp/img37764.whqc_768x512q80.webp"},
+          { name: "Mujadara", description: "Enjoy our Mujadara, a simple dish of lentils and rice topped with crispy caramelized onions. It’s hearty, flavorful, and made with just a few basic ingredients. A timeless and satisfying meal for any time of day.",
+              picture:"https://media-cdn2.greatbritishchefs.com/media/gueitkae/mujadara.whqc_1536x1024q80.webp"}
+      ],
+      Salads: [
+          { name: "Spiced Roasted Cauliflower and Orange Salad", description: "Try our Spiced Roasted Cauliflower and Orange Salad, featuring roasted cauliflower with a touch of spice and sweet orange segments. The simple combination of flavors is light, refreshing, and satisfying. A perfect side or light meal option.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/tmahtlor/img81346.whqc_1536x1024q80.webp"
+          },
+          { name: "Beetroot Salad", description: "Try our Beetroot Salad, a simple yet flavorful mix of roasted beetroot, fresh greens, and a tangy dressing. The earthy sweetness of the beets is perfectly complemented by the crispness of the salad. Light, refreshing, and full of natural goodness.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/oujh3oi3/img78057.whqc_1536x1024q80.webp"
+          },
+          { name: "Autumn Vegetable Salad", description: "Enjoy our Autumn Vegetable Salad, featuring roasted seasonal vegetables like squash, carrots, and parsnips, tossed with fresh greens. Drizzled with a maple-balsamic dressing, it’s a perfect balance of sweet, savory, and earthy flavors. A warming and nutritious dish, ideal for the cooler months.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/sipbwszl/img78113.whqc_1536x1024q80.webp"
+          }
+      ],
+      Desserts: [
+          { name: "Gluten-Free Banana Bread", description: "Savor our Gluten-Free Banana Bread, made with ripe bananas and almond flour for a moist, naturally sweet treat. It’s soft, light, and free from gluten, making it the perfect snack or breakfast option. Simple, wholesome, and utterly delicious.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/sgdnmh0n/img54238.whqc_1536x1024q80.webp"
+          },
+          { name: "Frosted Raw Vegan Brownies", description: "Enjoy our Frosted Raw Vegan Brownies, made with 75% cacao, dates, and walnuts for a naturally sweet and fudgy base. Topped with a smooth raw chocolate frosting, these brownies are a delicious and guilt-free treat. Perfect for a sweet craving that’s both indulgent and wholesome.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/1xsnqmkp/img71014.whqc_1536x1024q80.webp"
+          },
+          { name: "Vegan Chestnut and Orange Cheesecake", description: "Try our Vegan Chestnut and Orange Cheesecake, a creamy dessert with a blend of chestnut and orange flavors. The smooth filling sits on a nutty base, offering a satisfying and refreshing taste. A delicious, plant-based treat for any occasion.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/zltnekci/cheesecake-recipe.whqc_1536x1024q80.webp"
+          },
+          { name: "Vegan Banana and Chocolate Nice Cream", description: "Cool off with our Vegan Banana and Chocolate Nice Cream, a creamy, dairy-free treat made with ripe bananas and rich cocoa. Naturally sweet and refreshing, it’s a simple, plant-based dessert that’s both healthy and delicious. Perfect for a guilt-free treat on a warm day.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/utupgnva/img66564.whqc_1536x1024q80.webp"
+          },
+          { name: "Vegan Dark Chocolate Mousse", description: "Enjoy our Vegan Dark Chocolate Mousse, a rich and creamy dessert made with dark chocolate and coconut milk. It’s smooth, decadent, and naturally dairy-free, offering a simple yet satisfying treat. Perfect for chocolate lovers looking for a plant-based indulgence.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/povf20rd/img74937.whqc_1536x1024q80.webp"
+          }
+      ],
+      Drinks: [
+          { name: "Watermelon, Rosemary, and Prosecco Sorbet Cocktail", description: "Try our Watermelon, Rosemary, and Prosecco Sorbet Cocktail, a light and refreshing drink. With the natural sweetness of watermelon, a hint of rosemary, and a splash of Prosecco, it’s a simple and enjoyable treat. Perfect for a relaxing moment or a casual gathering.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/3ajekhpj/img40353.whqc_1536x1024q80.webp"
+          },
+          { name: "Acai Berry Smoothie", description: "Enjoy our Acai Berry Smoothie, a refreshing blend of acai berries, banana, and coconut water. Naturally sweet and packed with antioxidants, it’s the perfect way to start your day or recharge in the afternoon. Simple, delicious, and full of nutrients.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/adejvmsb/img60971.whqc_1536x1024q80fpt502fpl494.webp"
+          },
+          { name: "Mulled Wine Hot Chocolate", description: "Warm up with our Mulled Wine Hot Chocolate, a cozy blend of rich hot chocolate and mulled wine spices. With hints of cinnamon and cloves, it’s a comforting drink perfect for chilly evenings. A simple yet indulgent way to enjoy the best of both worlds.",
+              picture: "https://media-cdn2.greatbritishchefs.com/media/idghe1n3/img85166.whqc_1536x1024q80.webp"
+          }
+      ]
+  };
 
     const renderMenuSection = (section, items) => (
-        <div className="menu-section" key={section}>
-            <h2>{section}</h2>
-            <div className="menu-items">
+      <div>
+        <h2>{section}</h2>
+          <div className="about-me-cards-container">
                 {items.map((item, index) => {
-                    return <div
-                        key={index}
-                        className={`menu-item ti${Math.round(Math.pow(-1,index)/2 + 1/2)}`}
-                        onMouseEnter={() => setHoveredItem(item.name)}
-                        onMouseLeave={() => setHoveredItem(null)} > {/*style={{transform:`rotate(${Math.pow(-1,index)*2.5}deg)`}}*/}
-                            {/* {(item.name == "Buffalo Cauliflower Wings") ? <img src={item.picture} alt="" className="menu-picture"/> : "")} */}
-                            <img src={item.picture} alt="" className="menu-picture"/>
-                        <p className="menu-name">{item.name}</p>
-                        {hoveredItem === item.name && (
-                            <p className="menu-description">{item.description}</p>
-                        )}
+                    return <div className="about-me-card">
+                    <div className="about-me-card-image">
+                    <img src={item.picture} alt="Menu Item" className="more"/>
                     </div>
+                    <div className="about-me-card-content">
+                      <h3>{item.name}</h3>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
                 })}
-            </div>
-        </div>
+          </div>
+          </div>
     );
 
     return (
@@ -147,7 +213,20 @@ export function Menu(props) {
               </div>
             </div>
           </section>
+          <h1>Main Menu</h1>
             {Object.entries(menuData).map(([section, items]) => renderMenuSection(section, items))}
+
+            {/* <div className="about-me-cards-container">
+            {Object.entries(menuData).map(([section, items]) => <div className="about-me-card">
+                <div className="about-me-card-image">
+                  <img src={items[0].picture} alt="Menu Item" className="more"/>
+                </div>
+                <div className="about-me-card-content">
+                  <h3>{items[0].name}</h3>
+                  <p>{items[0].description}</p>
+                </div>
+              </div>)}
+              </div> */}
         </div>
         <Footer/>
         </div>
