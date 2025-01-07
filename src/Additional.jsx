@@ -27,7 +27,7 @@ export function Additional(props) {
                             </p>
                         </div>
                         <div className="process-image">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQej6T2IXgX9mSPRFEdzmP4Ex951iUz2tL8MQ&s" alt="Farm-to-table truck" />
+                            <img src="https://plus.unsplash.com/premium_photo-1661963219843-f1a50a6cfcd3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm-to-table truck" />
                         </div>
                     </div>
                 </section>
@@ -36,7 +36,7 @@ export function Additional(props) {
                     <h2>Preparation Processes</h2>
                     <div className="process-content1">
                     <div className="process-image1">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGh_k93SKDUu6YukWdPTJw1LS3P0WUIILOAQ&s" alt="Farm-to-table truck" className="fm"/>
+                            <img src="https://images.unsplash.com/photo-1492739159057-7d1896b3c63f?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Farm-to-table truck" className="fm"/>
                         </div>
                         <div className="process-text1">
                             <p>
@@ -63,7 +63,7 @@ export function Additional(props) {
                             </p>
                         </div>
                         <div className="process-image pie">
-                            <img src="https://i.ibb.co/d6MSHnw/i-Stock-694076680-e1519393024909-scaled.jpg" alt="Farm-to-table truck" className="pi"/>
+                            <img src="https://media.istockphoto.com/id/1162752096/vector/recycle-sign-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=mk8lSfbqwDhK1hBUDxF9YeXZIo409oeZPX4xWw9rwkY=" alt="Farm-to-table truck" className="pi"/>
                         </div>
                     </div>
                 </section>

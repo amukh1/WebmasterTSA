@@ -37,27 +37,31 @@ export function AboutUs(props) {
         <Nav />
         <div className="about-me-container">
           <h1 className="about-me-section-title">About Us</h1>
-          <Card/>
+          <div className="center">
+          <Card title="Welcome to Vegan Villa!" content="Vegan Villa is a vibrant, plant-based haven based in Seven Springs, PA. It offers a wide range of menu items made entirely from fresh, sustainable, and locally sourced ingredients. The restaurant features a cozy interior with natural wood accents, lush greenery, and soft ambient lighting, creating a welcoming space for all diners. Signature dishes include innovative twists on classics, such as buffalo cauliflower wings, vegan lasagna, and decadent vegan cheesecake. A drink menu of smoothies, shakes, and other creations have been perfected over the years. Vegan Villa prides itself on fostering a community of health-conscious diners while promoting eco-friendly practices and ethical dining."/>
+          </div>
           {/* Mission Section */}
           <section className="about-me-mission-section">
             <p class="mission">Our Mission</p>
-            <p class="mission-disc">
+            {/* <p class="mission-disc">
               At Vegan Villa, our mission is to create delicious, plant-based meals that celebrate freshness, sustainability, 
               and community. We are committed to supporting local farmers and using eco-friendly practices to deliver wholesome 
               food that nourishes both people and the planet. By fostering a welcoming space, we aim to inspire a deeper 
               connection to the food we eat and the impact it has on the world around us.
-            </p>
+            </p> */}
+            <div className="center">
+            <Card title="Mission Statement" content="At Vegan Villa, our mission is to create delicious, plant-based meals that celebrate freshness, sustainability, 
+              and community. We are committed to supporting local farmers and using eco-friendly practices to deliver wholesome 
+              food that nourishes both people and the planet. By fostering a welcoming space, we aim to inspire a deeper 
+              connection to the food we eat and the impact it has on the world around us."/>
+            </div>
           </section>
     
           {/* Sliding Pictures Section */}
           <section className="about-me-sliding-pictures-section">
             <h2>Our Team</h2>
             <div className="about-me-slider">
-              <div className="about-me-slide">Aditya Mukherjee</div>
-              <div className="about-me-slide">Gautham Rajanikanth</div>
-              <div className="about-me-slide">Parth Padole</div>
-              <div className="about-me-slide">Shaurya Khajanchi</div>
-              <div className="about-me-slide">Shirish Pradeep</div>
+              {[1,2,3,4,5].map((x)=><div className="about-me-slide">Anonymous {x}</div>)}
             </div>
           </section>
 

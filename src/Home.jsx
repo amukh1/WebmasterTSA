@@ -26,7 +26,15 @@ export function Home(props) {
     }));
 
 
-    const phrases = ['Cage Free & All Natural', 'Unconventually fucking lobotomy inducing', 'Unconventtually Autistic']
+    const phrases = ["Lettuce Serve You the Best Vegan Food Ever!", 
+        "Turnip the Flavor, Carrot About Your Health!",
+        "Our Food Will Leaf You Wanting More.",
+        "Think Outside the Barn",
+        "From Farm to Table, It’s Unbe-leaf-able!",
+        "Peas join us for a meal you’ll never forget.",
+        "Rooted in Flavor",
+        "Harvesting Happiness Daily"
+        ]
     // let phrase = phrases[Math.floor(Math.random()*phrases.length)]
     let [phrase, setPhrase] = useState(phrases[Math.floor(Math.random()*phrases.length)])
     let [phraseDiv, setPhraseDiv] = useState(<animated.div className="line" style={spring}>- {phrases[Math.floor(Math.random()*phrases.length)]} -</animated.div>)
@@ -52,7 +60,7 @@ export function Home(props) {
         </div>
         <div className="section location">
             {/* next section */}
-            Hours: 7 AM - 11 PM Sun-Sat 
+            Hours: 7 AM - 11 PM All Week 
 
             <br/>
 
@@ -77,9 +85,9 @@ export function Home(props) {
         </div>
 
         <div className="section testimonials">
-            <Cardtestimonial name="Gordon Ramsay" comment="Honestly, I thought it was going to be absolutely dreadful, but it turned out to be quite a pleasant surprise." pfp="https://i.ibb.co/BZXmPWP/Jp2-LEBL-400x400.jpg" delay={1}/>
-            <Cardtestimonial name="Larry" comment="Wow! Easily the best vegan food I have ever had!" pfp="https://i.ibb.co/VB1F6m9/image.png" delay={2}/>
-            <Cardtestimonial name="LeBron James" comment="I gotta say that that was some of the best food I have ever had, and I'm going to be a frequent visitor." pfp="https://hoopshype.com/wp-content/uploads/sites/92/2023/05/i_5a_c1_cf_lebron-james.png?w=1000&h=600&crop=1" delay={3}/>
+            <Cardtestimonial name="Gordon Ramsay" comment="Honestly, I thought it was going to be absolutely dreadful, but it turned out to be quite a pleasant surprise." pfp="https://i.imghippo.com/files/ttn9319MVg.png" delay={1}/>
+            <Cardtestimonial name="Larry" comment="Wow! Easily the best vegan food I have ever had!" pfp="https://i.imghippo.com/files/ttn9319MVg.png" delay={2}/>
+            <Cardtestimonial name="LeBron James" comment="I gotta say that that was some of the best food I have ever had, and I'm going to be a frequent visitor." pfp="https://i.imghippo.com/files/ttn9319MVg.png" delay={3}/>
             
         </div>
 

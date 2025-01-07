@@ -25,7 +25,7 @@ const EmblaCarousel = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
 
-  let imgs = ['https://i.ibb.co/5WCMM4F/Vegan-food.jpg', 'https://i.ibb.co/ky6kHLN/vdp.webp', 'https://i.ibb.co/rFVMQD6/img73872-whqc-2852x1426q80.webp'];
+  let imgs = ['https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1698867577020-38ae235fd612?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1712509786867-1356933033dd?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'];
   // let imgs = ['frog', 'frog 2', 'frog 3'];
   return (
     <section className="embla">
