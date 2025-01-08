@@ -7,8 +7,6 @@ import { useEffect, useState, useRef } from "react";
 import { animated, useSpring } from '@react-spring/web'
 
 
-
-
 export function MenuCard(props) {
 
    const [show,setShow] = useState(0)
