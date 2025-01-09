@@ -517,3 +517,18 @@ h1, h2 {
 .about-me-card-content:hover {
   height:100%;
 }
+
+object {
+  position:relative;
+  margin:5%;
+  margin-bottom:10%;
+  /* margin-top:50px; */
+}
+
+.break {
+  padding:40px;
+}
+
+.toppies {
+  margin-top:5%;
+}
